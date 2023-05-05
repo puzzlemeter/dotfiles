@@ -80,23 +80,7 @@ git config --global user.email "YOUR EMAIL"
 
 ## Required
 
-\+ Python3
-
-\+ Ruby
-
-\+ NodeJS
-
-<br>
-
-> Install compatibility packages
-
-`pip3 install neovim`
-
-`npm install -g neovim`
-
-`npm install -g eslint`
-
-`gem install neovim`
+`brew install neovim`
 
 `gem install mdl`
 
