@@ -6,7 +6,10 @@ ln -sfn $HOME/dotfiles/tmux/.tmux.conf.local ./.tmux.conf.local
 ln -sfn $HOME/dotfiles/zsh/.zshrc ./.zshrc
 ln -sfn $HOME/dotfiles/bash/.bash_profile ./.bash_profile
 ln -sfn $HOME/dotfiles/git/.git-completion.bash ./.git-completion.bash
-ln -sfn $HOME/dotfiles/git/.git-prompt.sh ./.git-prompt.sh
+# .git-completion.zsh
+ln -sfn $HOME/dotfiles/git/_git ./.zsh/_git
+# not in use, use starship instead
+# ln -sfn $HOME/dotfiles/git/.git-prompt.sh ./.git-prompt.sh
 ln -sfn $HOME/dotfiles/git/.gitignore_global ./.gitignore_global
 
 printf "\033[36mSymlink Completed.\033[0m\n"

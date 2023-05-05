@@ -1,6 +1,10 @@
 # starship prompt
 eval "$(starship init zsh)"
 
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
+autoload -Uz compinit && compinit
+
 # change 'ls' color
 export CLICOLOR=1;
 export LSCOLORS=gxfxcxdxbxegedabagacad;
