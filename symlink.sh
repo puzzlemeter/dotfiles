@@ -1,3 +1,4 @@
+ln -sfn $HOME/dotfiles/nvim ./.config/nvim
 ln -sfn $HOME/dotfiles/.alacritty.yml ./.alacritty.yml
 ln -sfn $HOME/dotfiles/.sh_path_and_aliases.d/.public_path ./.public_path
 ln -sfn $HOME/dotfiles/.sh_path_and_aliases.d/.common_alias ./.common_alias

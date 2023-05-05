@@ -1,4 +1,4 @@
-alias vim="nvim"
+# alias vim="nvim"
 alias dc='docker-compose'
 alias ls='ls -AFG'
 # ripgrep include hidden files

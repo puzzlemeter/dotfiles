@@ -32,7 +32,17 @@ migration wip
 
 #### Theme
 
-[sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
+Currently using
+
+- github-theme
+
+Other options
+
+- [sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
+
+- [iceberg](https://github.com/cocopon/iceberg.vim)
+
+- navarasu/onedark.nvim
 
 <br>
 
