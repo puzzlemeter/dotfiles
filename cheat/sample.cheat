@@ -1,0 +1,59 @@
+% rand
+
+# rand num
+openssl rand -base64 <num> | tr -dc 'a-zA-Z0-9' | fold -w <num> | head -1
+
+% echo apply
+
+# name apply
+echo "My name is <name>!"　|tee $HOME/<name>.log
+
+# date apply
+echo "Run command `<command>`"　|tee $HOME/<name>.log
+
+% terraform, tf
+
+# hoge init
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/hoge.json terraform init
+
+# hoge plan
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/hoge.json terraform init
+
+# hoge apply
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/hoge.json terraform apply 2>&1 |tee $HOME/infra/apply_log/<name>
+
+# foo init
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/foo.json terraform init
+
+# foo plan
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/foo.json terraform init
+
+# foo apply
+GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials/foo.json terraform apply 2>&1 |tee $HOME/infra/apply_log/<name>
+
+% kubessh
+
+# exec_con
+kubectl exec -it <my-pod> --container <main-app> -n <my-namespace>  -- /bin/bash
+
+% noansi
+
+# noansi
+cat <name>.log| sed $'s/\e\\[[0-9;:]*[a-zA-Z]//g]' |tee <name>_noansi.log
+
+% kcontext
+
+# get
+kubectl config get-contexts
+
+# bamboo
+kubectl config use-context gke_bamboo-cocoa-243211_asia-northeast1-a_my-first-cluster-1
+
+# desk
+kubectl config use-context docker-desktop
+
+% docker-run, background
+# Start a container from an image, with a custom name, in background
+docker run -it -d --name <name> <image_id>
+
+$ image_id: docker images --- --headers 1 --column 3

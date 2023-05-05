@@ -1,0 +1,100 @@
+format = """\
+    $time\
+    $username\
+    $hostname\
+    $gcloud\
+    $kubernetes\
+    $directory\
+    $git_branch\
+    $git_commit\
+    $git_state\
+    $git_status\
+    $hg_branch\
+    $docker_context\
+    $package\
+    $erlang\
+    $golang\
+    $nodejs\
+    $ocaml\
+    $ruby\
+    $rust\
+    $terraform\
+    $zig\
+    $nix_shell\
+    $conda\
+    $memory_usage\
+    $aws\
+    $env_var\
+    $crystal\
+    $cmd_duration\
+    $custom\
+    $line_break\
+    $jobs\
+    $battery\
+    $character\
+"""
+# Don't print a new line at the start of the prompt
+# add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+success_symbol = "🍜➜"
+error_symbol = "🤬➜"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[username]
+disabled = false
+style_user = 'white'
+style_root = 'black bold'
+format = '[$user]($style) '
+show_always = true
+
+[hostname]
+disabled = true
+ssh_only = false
+format =  "on [$hostname](bold red) "
+
+[time]
+disabled = false
+format = '[$time]($style) '
+utc_time_offset = "local"
+time_range = "-"
+
+[directory]
+disabled = false
+truncation_length = 8
+truncate_to_repo = false
+style = 'cyan'
+# format = '[$path](cyan) '
+
+[cmd_duration]
+disabled = true
+
+## lang
+[nodejs]
+format = 'via [🤖 $version](bold green) '
+
+## infra
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+format = "[$symbol$active]($style) "
+style = "bold yellow"
+
+[gcloud.region_aliases]
+us-central1 = "uc1"
+asia-northeast1 = "an1"
+
+[kubernetes]
+disabled = true
+symbol = "⛵ "
+style = "dimmed green"
+
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+"docker-desktop" = "desktop"

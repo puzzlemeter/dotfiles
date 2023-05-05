@@ -1,0 +1,27 @@
+[user]
+	name = changeme
+	email = changeme
+[core]
+	precomposeunicode = true
+	quotepath = false
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = $HOME/.gitignore_global
+[commit]
+	template = $HOME/.stCommitMsg
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = simple
+[alias]
+	unstage = reset HEAD
+[credential]
+	UseHttpPath = true
+[cola]
+	spellcheck = false
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential

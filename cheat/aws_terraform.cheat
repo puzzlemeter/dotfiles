@@ -1,0 +1,10 @@
+% terraform, tf
+
+# hoge init
+terraform init
+
+# hoge plan
+terraform plan
+
+# hoge apply
+terraform apply 2>&1 |tee <name>
