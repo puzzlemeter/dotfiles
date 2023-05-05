@@ -2,7 +2,7 @@
 
 Cloned from YiJun's Vim
 
-Planning to replace vim settings with https://vim-bootstrap.com/
+Planning to replace vim settings with lua definitions.
 Planning to replace vim filer with https://github.com/nvim-tree/nvim-tree.lua
 
 #### Structure (WIP)
@@ -21,6 +21,14 @@ Planning to replace vim filer with https://github.com/nvim-tree/nvim-tree.lua
 | `.style.vim`          | [ colorscheme ]            |
 
 <br>
+
+#### Plugin Manager
+
+migration wip
+
+[vim-plug](https://github.com/junegunn/vim-plug)
+
+[packer](https://github.com/wbthomason/packer.nvim)
 
 #### Theme
 
@@ -82,9 +90,14 @@ git config --global user.email "YOUR EMAIL"
 
 `brew install neovim`
 
-`gem install mdl`
+<!-- ```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+``` -->
 
-`brew install jq`
+<!-- `gem install mdl`
+
+`brew install jq` -->
 
 ### hammerspoon
 

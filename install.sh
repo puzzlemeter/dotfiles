@@ -15,7 +15,7 @@ if [ ! -d "$HOME/.vim" ]; then
 	echo "Make ALL with $HOME Directory PATH"
 	printf "\n"
 	echo " [- .vim"
-	echo "   |- bundle   [ -- Manager Plugin -- ]"
+	echo "   |- plugged   [ -- Manager Plugin -- ]"
 	echo "   |- undo     [ -- Generator Undo file -- ]"
 	echo "   |- tags     [ -- Generator Tag file -- ]"
 	echo "   |- session  [ -- Session directory -- ]"
@@ -24,16 +24,16 @@ if [ ! -d "$HOME/.vim" ]; then
 	printf "\n"
 
 	mkdir $HOME/.vim
-	mkdir $HOME/.vim/bundle
+	mkdir $HOME/.vim/plugged
 	mkdir $HOME/.vim/undo
 	mkdir $HOME/.vim/tags
 	mkdir $HOME/.vim/session
 	mkdir $HOME/.vim/autoload
 fi
 
-if [ ! -d "$HOME/.vim/bundle" ]; then
-	echo "Make dir -- bundle"
-	mkdir $HOME/.vim/bundle
+if [ ! -d "$HOME/.vim/plugged" ]; then
+	echo "Make dir -- plugged"
+	mkdir $HOME/.vim/plugged
 fi
 
 if [ ! -d "$HOME/.vim/undo" ]; then

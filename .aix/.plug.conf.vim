@@ -55,7 +55,7 @@ let g:deoplete#enable_at_startup = 1
 "------------------ YouCompleteMe -------------------
 " Linux vim && NeoVim Using YouCompleteMe
 let g:ycm_auto_trigger = 1
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 " let g:ycm_collect_identifiers_from_tags_files = 10
 " let g:ycm_add_preview_to_completeopt = 0
 " let g:ycm_use_ultisnips_completer = 0

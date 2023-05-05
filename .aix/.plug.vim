@@ -4,7 +4,7 @@
 filetype off
 
 " # Plugins Beginning
-call plug#begin('~/.vim/bundle/')
+call plug#begin('~/.vim/plugged')
 
 " @ Plugin --- [ File Buffer Manager ]
 Plug 'scrooloose/nerdtree'
