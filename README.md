@@ -43,10 +43,19 @@ Find in `fonts` directory:
 
 ## QUICK INSTALL
 
-#### OSX & Linux
+#### OSX & Linux setup
 
-run `./install.sh`
-run `./symlink.sh`
+```
+cd $HOME
+
+git clone <THIS REPOSITORY>
+./dotfiles/symlink.sh
+```
+
+```
+cd dotfiles
+./install.sh
+```
 
 start Vim and run `:PlugInstall` at first time
 
@@ -61,6 +70,13 @@ run `./update.sh` if vim settings changed.
 > you can change the dotfile manual for need:
 
 <br>
+
+### update git config
+
+git config --list
+
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL"
 
 ## Required
 

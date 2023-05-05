@@ -7,7 +7,6 @@ ln -sfn $HOME/dotfiles/zsh/.zshrc ./.zshrc
 ln -sfn $HOME/dotfiles/bash/.bash_profile ./.bash_profile
 ln -sfn $HOME/dotfiles/git/.git-completion.bash ./.git-completion.bash
 ln -sfn $HOME/dotfiles/git/.git-prompt.sh ./.git-prompt.sh
-ln -sfn $HOME/dotfiles/git/.gitconfig ./.gitconfig
 ln -sfn $HOME/dotfiles/git/.gitignore_global ./.gitignore_global
 
 printf "\033[36mSymlink Completed.\033[0m\n"

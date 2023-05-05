@@ -76,6 +76,9 @@ cp -rf .aix $HOME/
 cp -f .vimrc $HOME/
 # # support NeoVim
 
+# copy gitconfig
+cp $HOME/dotfiles/git/.gitconfig ./.gitconfig
+
 printf "\033[36mCopy Completed, Finish Install !\033[0m\n"
 printf "\033[33mPlease Checking Completed!\033[0m\n"
 printf "\033[33mIf you use NeoVim, You use command :version to see the .vimrc position and install [ xclip ] to support system clipcord!\033[0m\n"
