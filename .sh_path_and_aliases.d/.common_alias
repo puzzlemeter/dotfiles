@@ -1,5 +1,9 @@
-# alias vim="mvim -v"
+alias vim="nvim"
 alias dc='docker-compose'
 alias ls='ls -AFG'
+# ripgrep include hidden files
 alias rg='rg --hidden'
 alias ll='ls -l'
+alias lg='lazygit'
+# list symlink in current directory
+alias lssym='find . -maxdepth 1 -type l -ls'
