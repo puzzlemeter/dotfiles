@@ -1,18 +1,19 @@
-require('github-theme').setup()
+-- require('github-theme').setup()
+-- vim.cmd('colorscheme github_dark')
 
 -- require('onedark').load()
 -- require('onedark').setup {
 --     style = 'darker'
 -- }
 
--- vim.cmd [[
--- try
---   colorscheme sonokai
--- catch /^Vim\%((\a\+)\)\=:E185/
---   colorscheme default
---   set background=dark
--- endtry
--- ]]
+vim.cmd [[
+try
+  colorscheme sonokai
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+  set background=dark
+endtry
+]]
 
 require'nvim-web-devicons'.setup {
  -- your personnal icons can go here (to override)

@@ -23,5 +23,6 @@ keymap('n', '<leader>l', '<C-w>l', { noremap = true })
 -- keymap('n', '<C-b>', 'comfortable_motion#flick(-200)', { noremap = true, silent = true })
 
 -- buffer
-keymap('n', '<C-n>', '<cmd>bnext<cr>', { noremap = true, silent = true })
-keymap('n', '<C-p>', '<cmd>bprevious<cr>', { noremap = true, silent = true })
+keymap('n', '<C-k>', '<cmd>bnext<cr>', { noremap = true })
+keymap('n', '<C-j>', '<cmd>bprevious<cr>', { noremap = true })
+keymap('n', '<C-x>', '<cmd>bdelete<cr>', { noremap = true })

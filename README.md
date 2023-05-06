@@ -40,8 +40,6 @@ Other options
 
 - [sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
 
-- [iceberg](https://github.com/cocopon/iceberg.vim)
-
 - navarasu/onedark.nvim
 
 <br>
