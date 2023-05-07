@@ -9,36 +9,33 @@ Planning to replace vim filer with https://github.com/nvim-tree/nvim-tree.lua
 
 <br>
 
-| File                  | annotation                 |
-| --------------------- | -------------------------- |
-| `.vimrc, sysinit.vim` | [ entry ]                  |
-| `.base.vim`           | [ base universal config ]  |
-| `.ignore.vim`         | [ ignore files ]           |
-| `.init.vim`           | [ initialize config ]      |
-| `.keymap.vim`         | [ Shortcut keymap config ] |
-| `.plug.vim`           | [ plugin list ]            |
-| `.plug.conf.vim`      | [ plugin config ]          |
-| `.style.vim`          | [ colorscheme ]            |
+| File                            | annotation                 |
+| ------------------------------- | -------------------------- |
+| `init.lua`                      | [ entry ]                  |
+| `lua/username/base.lua`         | [ base universal config ]  |
+| `lua/username/keymaps.lua`      | [ Shortcut keymap config ] |
+| `lua/username/plugins.lua`      | [ plugin list ]            |
+| `lua/username/colorschemes.lua` | [ colorscheme config]      |
+| `lua/username/coc.lua`          | [ coc lsp config]          |
 
 <br>
 
+
 #### Plugin Manager
 
-migration wip
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-
 [packer](https://github.com/wbthomason/packer.nvim)
+
+use `:PackerCompile`, `:PackerSync`, `:PackerInstall`...
 
 #### Theme
 
 Currently using
 
-- github-theme
+- [sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
 
 Other options
 
-- [sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
+- github-theme
 
 - navarasu/onedark.nvim
 
@@ -46,20 +43,13 @@ Other options
 
 #### Font
 
-**Aix** is my personal collection of font.
-
-Find in `fonts` directory:
-
-- `Aix.MacBookPro15.dfont` - Mac OSX
-- `Aix.dfont` - Mac OSX
-- `Aix.fon` - Windows 7, 8, 10
-- `Aix.bdf` - Linux
-
-<br>
+for nvim-web-devicons, use Hack Nerd Font Mono. (Configuration written in .alacritty.yml)
 
 ## QUICK INSTALL
 
 #### OSX & Linux setup
+
+`brew install neovim`
 
 ```
 cd $HOME
@@ -73,9 +63,11 @@ cd dotfiles
 ./install.sh
 ```
 
-start Vim and run `:PlugInstall` at first time
+start NeoVim and run `:PackerInstall` at first time
 
-run `./update.sh` if vim settings changed.
+##### coc lsp install
+
+`:CocInstall coc-json coc-tsserver`
 
 <br>
 
@@ -96,16 +88,12 @@ git config --global user.email "YOUR EMAIL"
 
 ## Required
 
-`brew install neovim`
+Since alacritty not support ligature, I dont't use fira code anymore.
 
-<!-- ```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-``` -->
-
-<!-- `gem install mdl`
-
-`brew install jq` -->
+```
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```
 
 ### hammerspoon
 
