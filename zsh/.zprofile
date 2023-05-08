@@ -9,6 +9,7 @@ is_not_arm64() {
 
 if is_arm64; then
   eval "$($HOME/homebrew/bin/brew shellenv)"
+  source "$(brew --prefix asdf)/libexec/asdf.sh"
   local homebrew_bin="$HOME/homebrew/bin"
   if ! cat /etc/paths | grep -q "${homebrew_bin}"; then
     echo "setting up homebrew binary path for gui apps"
