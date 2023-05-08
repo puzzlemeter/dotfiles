@@ -4,7 +4,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux"
+    - 'tmux attach || tmux'
 
 # window
 window:
@@ -18,8 +18,7 @@ window:
   position:
     x: 0
     y: 0
-
-background_opacity: 1
+  opacity: 1
 
 # font設定
 font:
