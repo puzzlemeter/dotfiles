@@ -15,6 +15,7 @@ ln -sfn $HOME/dotfiles/git/_git $HOME/.zsh/_git
 # not in use, use starship instead
 # ln -sfn $HOME/dotfiles/git/.git-prompt.sh ./.git-prompt.sh
 ln -sfn $HOME/dotfiles/git/.gitignore_global $HOME/.gitignore_global
+ln -sfn $HOME/dotfiles/starship/starship.toml $HOME/.config/starship.toml
 
 printf "\033[36mSymlink Completed.\033[0m\n"
 printf "\n"
