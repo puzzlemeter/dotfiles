@@ -67,7 +67,4 @@ else
   print "404: ~/.public_path not found."
 fi
 
-# version manager
-source /usr/local/opt/asdf/libexec/asdf.sh
-
 # source <(kubectl completion zsh)
