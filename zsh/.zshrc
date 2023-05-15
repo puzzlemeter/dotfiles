@@ -22,6 +22,9 @@ export HISTFILE=${HOME}/.zsh_history
 # メモリに保存される履歴の件数
 export HISTSIZE=1000
 
+# スペースから始まるコマンド行はヒストリに残さない
+setopt hist_ignore_space
+
 # 履歴ファイルに保存される履歴の件数
 export SAVEHIST=100000
 
@@ -66,5 +69,3 @@ if [ -f ~/.public_path ]; then
 else
   print "404: ~/.public_path not found."
 fi
-
-# source <(kubectl completion zsh)

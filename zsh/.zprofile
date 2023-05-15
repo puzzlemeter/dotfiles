@@ -8,6 +8,7 @@ is_not_arm64() {
 }
 
 if is_arm64; then
+  export DOCKER_DEFAULT_PLATFORM=linux/x86_64
   eval "$($HOME/homebrew/bin/brew shellenv)"
   source "$(brew --prefix asdf)/libexec/asdf.sh"
   local homebrew_bin="$HOME/homebrew/bin"
