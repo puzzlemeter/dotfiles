@@ -21,7 +21,7 @@ echo " -] "
 printf "\n"
 
 # copy gitconfig
-cp $HOME/dotfiles/git/.gitconfig ./.gitconfig
+cp $HOME/dotfiles/git/.gitconfig $HOME/.gitconfig
 
 printf "\033[36mCopy Completed, Finish Install !\033[0m\n"
 printf "\033[33mPlease Checking Completed!\033[0m\n"
