@@ -1,39 +1,37 @@
 local opt = vim.opt
 
--- Format
-opt.nu = true
-opt.copyindent = true
-opt.preserveindent = true
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 0
-opt.expandtab = false
-opt.autowrite = true
-opt.display = 'lastline'
-
--- Indentation
-opt.ambiwidth = 'double'
-opt.wrap = true
-opt.autoindent = true
-opt.smartindent = true
-opt.smarttab = true
-opt.linebreak = true
-opt.shiftround = true
-
-opt.showmode = false
-opt.ruler = true
-opt.cursorline = true
-opt.winaltkeys = 'no'
-
-opt.termguicolors = true
-
-
 local options = {
+-- Format
+	nu = true,
+	copyindent = true,
+	preserveindent = true,
+	tabstop = 2,
+	shiftwidth = 2,
+	softtabstop = 0,
+	expandtab = false,
+	autowrite = true,
+	display = 'lastline',
+-- Indentation
+	ambiwidth = 'double',
+	wrap = true,
+	autoindent = true,
+	smartindent = true,
+	smarttab = true,
+	linebreak = true,
+	shiftround = true,
+-- 分類 WIP
 	encoding = "utf-8",
 	fileencoding = "utf-8",
-	-- title = true,
-	-- backup = false,
+	incsearch = true,
 	clipboard = "unnamedplus",
+  showmode = false,
+  ruler = true,
+  cursorline = true,
+  winaltkeys = 'no',
+  termguicolors = true,
+	undofile = true,
+	title = true,
+	-- backup = false,
 	-- cmdheight = 2,
 	-- completeopt = { "menuone", "noselect" },
 	-- conceallevel = 0,
@@ -41,27 +39,18 @@ local options = {
 	-- ignorecase = true,
 	-- mouse = "a",
 	-- pumheight = 10,
-	-- showmode = false,
 	-- showtabline = 2,
 	-- smartcase = true,
-	-- smartindent = true,
 	-- swapfile = false,
-	-- termguicolors = true,
 	-- timeoutlen = 300,
-	undofile = true,
 	-- updatetime = 300,
 	-- writebackup = false,
 	-- shell = "fish",
 	-- backupskip = { "/tmp/*", "/private/tmp/*" },
-	-- expandtab = true,
-	-- shiftwidth = 2,
-	-- tabstop = 2,
-	-- cursorline = true,
 	-- number = true,
 	-- relativenumber = false,
 	-- numberwidth = 4,
 	-- signcolumn = "yes",
-	-- wrap = false,
 	-- winblend = 0,
 	-- wildoptions = "pum",
 	-- pumblend = 5,
