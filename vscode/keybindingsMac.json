@@ -1,6 +1,17 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
   {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "key": "alt+shift+space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "cmd+l",
     "command": "workbench.action.gotoLine"
   },

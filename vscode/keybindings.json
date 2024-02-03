@@ -1,6 +1,17 @@
 // Empty
 [
   {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "key": "alt+shift+space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+shift+p",
     "command": "-cursorUpSelect",
     "when": "editorTextFocus"
