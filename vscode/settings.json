@@ -37,14 +37,9 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  // ----------- vim -----------
-  "vim.disableExtension": true,
-  "vim.useSystemClipboard": true,
-  "vim.vimrc.enable": true,
-  "vim.hlsearch": true,
-  "vim.easymotion": true,
-  "vim.visualstar": true,
-  "vim.useCtrlKeys": true,
+  // ----------- neovim -----------
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.lua",
   // ----------- go -----------
   "go.goroot": "/usr/local/opt/go/libexec",
   "go.gopath": "/Users/Liang.YungHsin/go",

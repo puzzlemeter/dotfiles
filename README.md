@@ -1,49 +1,26 @@
 ## INTRODUCTION
 
-Cloned from YiJun's Vim
+#### Plugin Manager
 
-Planning to replace vim settings with https://vim-bootstrap.com/
-Planning to replace vim filer with https://github.com/nvim-tree/nvim-tree.lua
-
-#### Structure (WIP)
-
-<br>
-
-| File                  | annotation                 |
-| --------------------- | -------------------------- |
-| `.vimrc, sysinit.vim` | [ entry ]                  |
-| `.base.vim`           | [ base universal config ]  |
-| `.ignore.vim`         | [ ignore files ]           |
-| `.init.vim`           | [ initialize config ]      |
-| `.keymap.vim`         | [ Shortcut keymap config ] |
-| `.plug.vim`           | [ plugin list ]            |
-| `.plug.conf.vim`      | [ plugin config ]          |
-| `.style.vim`          | [ colorscheme ]            |
-
-<br>
+lazy vim
 
 #### Theme
 
-[sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
+Currently using
+
+- [tokyonight](https://github.com/folke/tokyonight.nvim)
 
 <br>
 
 #### Font
 
-**Aix** is my personal collection of font.
-
-Find in `fonts` directory:
-
-- `Aix.MacBookPro15.dfont` - Mac OSX
-- `Aix.dfont` - Mac OSX
-- `Aix.fon` - Windows 7, 8, 10
-- `Aix.bdf` - Linux
-
-<br>
+use Hack Nerd Font Mono. (Configuration written in .alacritty.yml)
 
 ## QUICK INSTALL
 
 #### OSX & Linux setup
+
+`brew install neovim`
 
 ```
 cd $HOME
@@ -57,20 +34,6 @@ cd dotfiles
 ./install.sh
 ```
 
-start Vim and run `:PlugInstall` at first time
-
-run `./update.sh` if vim settings changed.
-
-<br>
-
-#### Windows
-
-> by default, I do not intend to merge it to Windows
-
-> you can change the dotfile manual for need:
-
-<br>
-
 ### update git config
 
 git config --list
@@ -80,27 +43,12 @@ git config --global user.email "YOUR EMAIL"
 
 ## Required
 
-\+ Python3
+Since alacritty not support ligature, I dont't use fira code anymore.
 
-\+ Ruby
-
-\+ NodeJS
-
-<br>
-
-> Install compatibility packages
-
-`pip3 install neovim`
-
-`npm install -g neovim`
-
-`npm install -g eslint`
-
-`gem install neovim`
-
-`gem install mdl`
-
-`brew install jq`
+```
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```
 
 ### hammerspoon
 
