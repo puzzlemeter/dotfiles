@@ -1,49 +1,20 @@
 ## INTRODUCTION
 
-Cloned from YiJun's Vim
-
-Planning to replace vim settings with lua definitions.
-Planning to replace vim filer with https://github.com/nvim-tree/nvim-tree.lua
-
-#### Structure (WIP)
-
-<br>
-
-| File                            | annotation                 |
-| ------------------------------- | -------------------------- |
-| `init.lua`                      | [ entry ]                  |
-| `lua/username/base.lua`         | [ base universal config ]  |
-| `lua/username/keymaps.lua`      | [ Shortcut keymap config ] |
-| `lua/username/plugins.lua`      | [ plugin list ]            |
-| `lua/username/colorschemes.lua` | [ colorscheme config]      |
-| `lua/username/coc.lua`          | [ coc lsp config]          |
-
-<br>
-
-
 #### Plugin Manager
 
-[packer](https://github.com/wbthomason/packer.nvim)
-
-use `:PackerCompile`, `:PackerSync`, `:PackerInstall`...
+lazy vim
 
 #### Theme
 
 Currently using
 
-- [sonokai](https://vimcolorschemes.com/sainnhe/sonokai)
-
-Other options
-
-- github-theme
-
-- navarasu/onedark.nvim
+- [tokyonight](https://github.com/folke/tokyonight.nvim)
 
 <br>
 
 #### Font
 
-for nvim-web-devicons, use Hack Nerd Font Mono. (Configuration written in .alacritty.yml)
+use Hack Nerd Font Mono. (Configuration written in .alacritty.yml)
 
 ## QUICK INSTALL
 
@@ -62,22 +33,6 @@ git clone <THIS REPOSITORY>
 cd dotfiles
 ./install.sh
 ```
-
-start NeoVim and run `:PackerInstall` at first time
-
-##### coc lsp install
-
-`:CocInstall coc-json coc-tsserver`
-
-<br>
-
-#### Windows
-
-> by default, I do not intend to merge it to Windows
-
-> you can change the dotfile manual for need:
-
-<br>
 
 ### update git config
 

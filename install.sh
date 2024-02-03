@@ -5,12 +5,6 @@ hash git 2>/dev/null || { echo >&2 "Require Git is not installed! Please install
 git --version
 printf "\033[36mChecking Git Completed!\033[0m\n"
 
-echo "Clone Packer as Plugin Manager..."
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-printf "\033[33mChecking Completed!\033[0m\n"
-
 printf "\033[36mCopy new files to the HOME PATH...\033[0m\n"
 
 printf "\n"

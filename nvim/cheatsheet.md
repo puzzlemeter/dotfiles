@@ -7,14 +7,10 @@ Cheatsheet of the keymaps and basic controls of vim.
 C-w + hjkl can move cursor
 
 <leader> + e can toggle tree
-Buffer control using below
-C-j
-C-k
-C-x
 
 `:ls` list buffers
 
-`q:` list histories
+`<leader>:` list histories
 
 `~` change case
 
@@ -22,6 +18,11 @@ C-x
 
 <C-W> + s split horizontal (command :sp)
 <C-W> + v split vertical (command :vs)
+
+or
+
+`<leader>|`
+`<leader>-`
 
 ## Visual mode
 
@@ -45,25 +46,6 @@ yanking range of lines
 yank all lines to system clipboard
 
 `:%y+`
-
-## fzf.vim
-
-`:Buffer`
-
-`:Files`
-
-`:Rg`
-
-`:Colors` list and change colorscheme
-
-`:colors` shows current colorscheme
-
-## tpope/vim-surround
-
-`cs"'` : change surrond from " to '
-`ds[` : delete the surronded []
-`ys$"` : normal mode, cursor to end of line and surrond with "
-`v$S"` : visual mode, cursor to end of line and surrond with "
 
 ## You don't need multi cursor
 
