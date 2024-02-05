@@ -46,7 +46,9 @@ export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 source ~/.git-completion.bash
 source /usr/local/opt/asdf/libexec/asdf.sh
 # source <(kubectl completion bash)
-source ~/.bashrc
+if test -f "~/.bash_step"; then
+  source ~/.bash_step
+fi
 # fbr() {
 #   local branches branch
 #   branches=$(git branch -vv) &&

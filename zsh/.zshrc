@@ -22,6 +22,8 @@ export HISTFILE=${HOME}/.zsh_history
 # メモリに保存される履歴の件数
 export HISTSIZE=1000
 
+# スペースから始まるコマンド行はヒストリに残さない
+setopt hist_ignore_space
 # 履歴ファイルに保存される履歴の件数
 export SAVEHIST=100000
 
@@ -68,3 +70,6 @@ else
 fi
 
 # source <(kubectl completion zsh)
+if [ -e ~/.bash_step ]; then
+  source ~/.bash_step
+fi
