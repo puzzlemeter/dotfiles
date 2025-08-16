@@ -75,7 +75,7 @@ action = "ToggleFullscreen"
 key = "Return"
 mods = "Command"
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux"]
 program = "/bin/zsh"
 

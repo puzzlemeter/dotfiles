@@ -8,17 +8,11 @@ is_not_arm64() {
 }
 
 if is_arm64; then
-  export DOCKER_DEFAULT_PLATFORM=linux/x86_64
-  eval "$($HOME/homebrew/bin/brew shellenv)"
-  source "$(brew --prefix asdf)/libexec/asdf.sh"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   local homebrew_bin="$HOME/homebrew/bin"
-  if ! cat /etc/paths | grep -q "${homebrew_bin}"; then
-    echo "setting up homebrew binary path for gui apps"
-    echo -e "${homebrew_bin}\n$(cat /etc/paths)" | sudo tee /etc/paths > /dev/null
-  fi
 fi
 
-if is_not_arm64; then
-  # version manager
-  source /usr/local/opt/asdf/libexec/asdf.sh
-fi
+# if is_not_arm64; then
+#   # version manager
+#   source /usr/local/opt/asdf/libexec/asdf.sh
+# fi

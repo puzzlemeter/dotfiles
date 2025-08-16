@@ -11,7 +11,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad;
 export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
@@ -56,20 +56,18 @@ zshaddhistory() {
 export LC_ALL=ja_JP.UTF-8
 export LANG=ja_JP.UTF-8
 
-# ln -s ~/dotfiles/.sh_path_and_aliases.d/.common_alias ~/.common_alias
+# ln -s ~/dev/dotfiles/.sh_path_and_aliases.d/.common_alias ~/.common_alias
 if [ -f ~/.common_alias ]; then
   source ~/.common_alias
 else
   print "404: ~/.common_alias not found."
 fi
-# ln -s ~/dotfiles/.sh_path_and_aliases.d/.public_path ~/.public_path
+
+# ln -s ~/dev/dotfiles/.sh_path_and_aliases.d/.public_path ~/.public_path
 if [ -f ~/.public_path ]; then
   source ~/.public_path
 else
   print "404: ~/.public_path not found."
 fi
 
-# source <(kubectl completion zsh)
-if [ -e ~/.bash_step ]; then
-  source ~/.bash_step
-fi
+eval "$(/opt/homebrew/bin/mise activate zsh)"
