@@ -1,5 +1,5 @@
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion.d ]; then
+. $(brew --prefix)/etc/bash_completion.d/
 fi
 
 ### history
@@ -25,18 +25,10 @@ export LANG=ja_JP.UTF-8
 
 ### from directory
 if [ -d ~/.sh_path_and_aliases.d ]; then
-  # . ~/.sh_path_and_aliases.d/.local_alias
-  # . ~/.sh_path_and_aliases.d/.private_path
   . ~/.sh_path_and_aliases.d/.common_alias
-  . ~/.sh_path_and_aliases.d/.public_path
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
-export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
 
 # change 'ls' color
 export CLICOLOR=1;
@@ -44,11 +36,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad;
 export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43:"
 
 source ~/.git-completion.bash
-source /usr/local/opt/asdf/libexec/asdf.sh
 # source <(kubectl completion bash)
-if test -f "~/.bash_step"; then
-  source ~/.bash_step
-fi
 # fbr() {
 #   local branches branch
 #   branches=$(git branch -vv) &&

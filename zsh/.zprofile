@@ -9,10 +9,11 @@ is_not_arm64() {
 
 if is_arm64; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  local homebrew_bin="$HOME/homebrew/bin"
 fi
 
+# locale
+export LC_ALL=ja_JP.UTF-8
+export LANG=ja_JP.UTF-8
+
 # if is_not_arm64; then
-#   # version manager
-#   source /usr/local/opt/asdf/libexec/asdf.sh
 # fi

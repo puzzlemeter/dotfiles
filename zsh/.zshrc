@@ -1,3 +1,6 @@
+if [ -x /usr/libexec/path_helper ]; then
+    eval $(/usr/libexec/path_helper -s)
+fi
 # starship prompt
 eval "$(starship init zsh)"
 
@@ -29,7 +32,6 @@ export SAVEHIST=100000
 
 # 重複を記録しない
 setopt hist_ignore_dups
-
 setopt share_history
 
 # HISTIGNORE
@@ -52,22 +54,11 @@ zshaddhistory() {
     ]]
 }
 
-# locale
-export LC_ALL=ja_JP.UTF-8
-export LANG=ja_JP.UTF-8
-
 # ln -s ~/dev/dotfiles/.sh_path_and_aliases.d/.common_alias ~/.common_alias
 if [ -f ~/.common_alias ]; then
   source ~/.common_alias
 else
   print "404: ~/.common_alias not found."
-fi
-
-# ln -s ~/dev/dotfiles/.sh_path_and_aliases.d/.public_path ~/.public_path
-if [ -f ~/.public_path ]; then
-  source ~/.public_path
-else
-  print "404: ~/.public_path not found."
 fi
 
 eval "$(/opt/homebrew/bin/mise activate zsh)"
