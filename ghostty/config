@@ -1,0 +1,69 @@
+# ========================================
+# Shift+Enter設定（環境によっては必要）
+# ========================================
+# 通常は不要ですが、Shift+Enterが効かない場合は以下を追加
+# keybind = shift+enter=text:\n
+
+# ========================================
+# フォント設定
+# ========================================
+
+# Nerd Fontを使用（アイコン表示に対応）
+font-family = "Hack Nerd Font Mono"
+font-size = 14
+
+# ========================================
+# テーマ設定
+# ========================================
+
+# ダーク/ライトモードで自動切り替え
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+
+# ========================================
+# ウィンドウ設定
+# ========================================
+
+# 起動時のウィンドウサイズ
+window-height = 40
+window-width = 160
+
+# パディング（読みやすさ向上）
+window-padding-x = 16
+window-padding-y = 16
+window-padding-balance = true
+
+# ウィンドウ状態を保存
+window-save-state = always
+
+# macOS: タイトルバースタイル
+macos-titlebar-style = tabs
+
+# ========================================
+# パフォーマンス設定
+# ========================================
+
+# スクロールバック行数（大量出力に対応）
+scrollback-limit = 100000
+
+# マウス関連
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# ========================================
+# シェル統合
+# ========================================
+
+# シェル統合を有効化
+shell-integration = detect
+shell-integration-features = sudo,title
+
+# ========================================
+# 便利なキーバインド
+# ========================================
+
+# 設定リロード
+keybind = cmd+shift+comma=reload_config
+
+# プロンプト間ジャンプ（Claude Codeの出力を素早く確認）
+keybind = cmd+up=jump_to_prompt:-1
+keybind = cmd+down=jump_to_prompt:1

@@ -3,6 +3,7 @@ if [ -x /usr/libexec/path_helper ]; then
 fi
 # starship prompt
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 fpath=(~/.zsh $fpath)
 zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
